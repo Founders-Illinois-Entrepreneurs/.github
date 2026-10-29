@@ -1,11 +1,11 @@
 # Founders · Illinois Entrepreneurs
 
-The entrepreneurship club at the University of Illinois Urbana-Champaign. Everything the club runs on the web lives here, so it stays with the club when officers graduate.
+The entrepreneurship club at the University of Illinois Urbana-Champaign. Everything the club runs on the web lives here, so it stays with the club when officers graduate. Each site has its own repo, named after its subdomain.
 
 | Repo | What it is | Live at | Hosting |
 | --- | --- | --- | --- |
 | [founders-website](https://github.com/Founders-Illinois-Entrepreneurs/founders-website) | The main club website | [foundersillinois.org](https://foundersillinois.org) | GitHub Pages |
-| [founders-tools](https://github.com/Founders-Illinois-Entrepreneurs/founders-tools) | Event tools, one app per folder in `apps/` | [events.foundersillinois.org](https://events.foundersillinois.org) | Vercel |
+| [events](https://github.com/Founders-Illinois-Entrepreneurs/events) | Live event tools (R&D pitch evaluation game) | [events.foundersillinois.org](https://events.foundersillinois.org) | Vercel |
 
 ## Want to contribute?
 
