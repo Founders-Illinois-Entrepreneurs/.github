@@ -40,7 +40,7 @@ Ask an exec member to invite you to the org. Then:
 - **Read the repo's README first.** It explains how to run the site locally and how it's deployed.
 - **Never commit secrets or personal data.** Every repo here is public. Passwords and database URLs go in the hosting settings (Vercel environment variables). Member lists, emails and phone numbers stay out of git.
 - **Never develop against a live database.** Each repo's README explains how to get your own copy.
-- **Add yourself to the Credits section** of the README in your pull request. A LinkedIn link is optional.
+- **Add yourself to the Credits section** of the README in your pull request, with a link to your GitHub profile.
 
 ## For exec: running the org
 
