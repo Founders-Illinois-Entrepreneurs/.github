@@ -16,12 +16,15 @@ The entrepreneurship club at the University of Illinois Urbana-Champaign. Everyt
 | Role | Who | Can |
 | --- | --- | --- |
 | Owner | At least two exec members | Everything: org settings, inviting people, creating repos, emergency fixes straight to `main` |
-| `maintainers` team | Members trusted to review code (any year) | Approve pull requests, so they can be merged |
+| `exec` team | The current exec team | Approve pull requests in every repo |
+| `<repo>-maintainers` team (e.g. `events-maintainers`) | The people who know that site's code | Approve pull requests in their repo only |
 | Member | Anyone contributing | Push branches and open pull requests to every repo |
+
+Each repo's `.github/CODEOWNERS` names who can approve it: its own maintainers team plus `exec`.
 
 **How a change gets live:**
 1. Push a branch and open a pull request into `main`.
-2. Automatic checks (tests, lint, build) must pass, and one person from `maintainers` must approve.
+2. Automatic checks (tests, lint, build) must pass, and someone from that repo's maintainers team or `exec` must approve.
 3. Merge. The site deploys on its own within a few minutes.
 
 **Org settings, and why:**
@@ -54,15 +57,16 @@ Account logins, who holds them, renewal dates and contacts are in the private **
 | To… | Do this |
 | --- | --- |
 | Add a contributor | Org → **People** → **Invite member** (role: Member) |
-| Let someone approve pull requests | Org → **Teams** → `maintainers` → **Add a member** |
+| Let someone approve pull requests for one repo | Org → **Teams** → `<repo>-maintainers` → **Add a member** |
+| Add an exec member | Org → **Teams** → `exec` → **Add a member** (and make them an owner if they'll run the org) |
 | Remove someone | Org → **People** → their name → **Remove from organization** |
 | Make an exec member an owner | Org → **People** → their name → **Change role** → Owner |
 | Change how many approvals a repo needs | Repo → **Settings** → **Rules** → **Rulesets** → `Protect main` → **Required approvals** |
 
 **Adding a new site:**
 1. Create the repo in this org (public), named after its subdomain.
-2. Repo → **Settings** → **Collaborators and teams**: give `maintainers` **Write** access.
-3. Add `.github/CODEOWNERS` containing `* @Founders-Illinois-Entrepreneurs/maintainers`.
+2. Org → **Teams** → **New team** `<repo>-maintainers`. Then repo → **Settings** → **Collaborators and teams**: give it and `exec` **Write** access.
+3. Add `.github/CODEOWNERS` containing `* @Founders-Illinois-Entrepreneurs/<repo>-maintainers @Founders-Illinois-Entrepreneurs/exec`.
 4. Copy the branch rules from `events` (Settings → Rules → Rulesets → `Protect main` → export, then import in the new repo).
 5. Host it in the club's Vercel account (apps with a server or database) or on GitHub Pages (static sites). Never a personal account.
 6. Add a CNAME record for the subdomain in Namecheap DNS.
@@ -70,6 +74,6 @@ Account logins, who holds them, renewal dates and contacts are in the private **
 
 **When the exec team changes:** follow the **Each semester** checklist in the Tech handover doc. In short:
 - Hand over ownership, the team account password and backup codes.
-- Update the `maintainers` team.
+- Update the `exec` team and each repo's maintainers team.
 - Change the events organizer password.
 - Check the domain renewal.
