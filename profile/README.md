@@ -14,6 +14,6 @@ Ask an officer to add you to the org. Then branch, open a pull request, and get 
 ## For officers: how the club's tech is owned
 
 - **Code:** in this GitHub org. Keep at least two owners at all times, and remove people when they graduate.
-- **Hosting accounts** (Vercel, Neon database) and the **domain** (Namecheap) are signed in with the club's shared Google account, not anyone's personal email. The current president and tech lead hold its password and backup codes.
+- **Hosting accounts** (Vercel, Neon database) and the **domain** (Namecheap) should all be signed in with the club's shared Google account, not anyone's personal email. The current president and tech lead hold its password and backup codes.
 - **Secrets** (database URLs, admin passwords) live only in Vercel's environment variables, never in a repo. All repos here are public.
 - **Recurring cost:** only the `foundersillinois.org` domain renewal.
