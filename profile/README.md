@@ -5,7 +5,7 @@ The entrepreneurship club at the University of Illinois Urbana-Champaign. Everyt
 | Repo | What it is | Live at | Hosting |
 | --- | --- | --- | --- |
 | [founders-website](https://github.com/Founders-Illinois-Entrepreneurs/founders-website) | The main club website | [foundersillinois.org](https://foundersillinois.org) | GitHub Pages |
-| [events](https://github.com/Founders-Illinois-Entrepreneurs/events) | Live event tools (R&D pitch evaluation game) | [events.foundersillinois.org](https://events.foundersillinois.org) | Vercel |
+| [events](https://github.com/Founders-Illinois-Entrepreneurs/events) | Live tools for club events | [events.foundersillinois.org](https://events.foundersillinois.org) | Vercel |
 
 ## How this org works
 
