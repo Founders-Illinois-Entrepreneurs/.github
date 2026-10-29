@@ -31,7 +31,7 @@ Each repo's `.github/CODEOWNERS` names its approvers: its own maintainers team p
 **Org settings, and why:**
 - Only owners create, delete or transfer repos, so each repo maps to a real site and nothing disappears by accident.
 - Members can't change a repo's visibility. Every repo stays public, which keeps branch rules and hosting free.
-- Members can't invite outside collaborators. People join through the org instead.
+- Only owners can give someone outside the org access to a repo (members don't have admin access to any repo). People join through the org instead.
 - New repos start with secret scanning and push protection on (a push containing a password or key is blocked), plus Dependabot security alerts.
 
 ## Contributing
