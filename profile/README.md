@@ -29,6 +29,8 @@ Each site gets its own repo, named after its subdomain (e.g. `vote` for vote.fou
 
 ## For officers: ownership and handover
 
+Account logins, who holds them, renewal dates and contacts are in the private **Tech handover** doc in the club's Google Drive. Ask the president for access. Never put those details here: this page is public.
+
 How it's owned:
 - **Code:** this GitHub org. Keep at least two owners at all times.
 - **Accounts** (Vercel with its Neon database, and the Namecheap domain) are signed in with the club's shared team account, never anyone's personal email. The president and the tech lead hold its password and two-factor backup codes.
