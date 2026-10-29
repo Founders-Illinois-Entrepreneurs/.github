@@ -16,15 +16,15 @@ The entrepreneurship club at the University of Illinois Urbana-Champaign. Everyt
 | Role | Who | Can |
 | --- | --- | --- |
 | Owner | At least two exec members | Everything: org settings, inviting people, creating repos, emergency fixes straight to `main` |
-| `exec` team | The current exec team | Approve pull requests in every repo |
-| `<repo>-maintainers` team (e.g. `events-maintainers`) | The people who know that site's code | Approve pull requests in their repo only |
-| Member | Anyone contributing | Push branches and open pull requests to every repo |
+| `exec` team | The current exec team | Approve pull requests in every repo, and merge them without waiting for a review |
+| `<repo>-maintainers` team (e.g. `events-maintainers`) | The people who know that site's code | The same, in their repo only |
+| Member | Anyone contributing | Push branches and open pull requests in every repo |
 
-Each repo's `.github/CODEOWNERS` names who can approve it: its own maintainers team plus `exec`.
+Each repo's `.github/CODEOWNERS` names its approvers: its own maintainers team plus `exec`. Only their approvals count, because each repo requires a review from a code owner.
 
 **How a change gets live:**
 1. Push a branch and open a pull request into `main`.
-2. Automatic checks (tests, lint, build) must pass, and someone from that repo's maintainers team or `exec` must approve.
+2. Automatic checks (tests, lint, build) must pass, and someone from that repo's maintainers team or `exec` must approve. Team members can also merge their own pull requests without waiting for a review, but not push straight to `main`.
 3. Merge. The site deploys on its own within a few minutes.
 
 **Org settings, and why:**
