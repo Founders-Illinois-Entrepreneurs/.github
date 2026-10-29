@@ -19,6 +19,7 @@ The entrepreneurship club at the University of Illinois Urbana-Champaign. Everyt
 | `exec` team | The current exec team | Approve pull requests in every repo, and merge them without waiting for a review |
 | `<repo>-maintainers` team (e.g. `events-maintainers`) | The people who know that site's code | The same, in their repo only |
 | Member | Anyone contributing | Push branches and open pull requests in every repo |
+| Subteam teams: `events`, `exploration`, `community`, `r&d` | Each club subteam's members | Nothing extra: they group people, so a whole subteam can be mentioned (`@Founders-Illinois-Entrepreneurs/r-d`) |
 
 Each repo's `.github/CODEOWNERS` names its approvers: its own maintainers team plus `exec`. Only their approvals count, because each repo requires a review from a code owner.
 
@@ -42,15 +43,9 @@ Ask an exec member to invite you to the org. Then:
 - **Never develop against a live database.** Each repo's README explains how to get your own copy.
 - **Add yourself to the Credits section** of the README in your pull request, with a link to your GitHub profile.
 
-## For exec: running the org
+## Running the org
 
-Account logins, who holds them, renewal dates and contacts are in the private **Tech handover** doc in the club's Google Drive, shared with the exec team. Never put those details here: this page is public.
-
-**How it's owned:**
-- **Code:** this GitHub org, with at least two exec members as owners at all times.
-- **Hosting and domain** (Vercel with its Neon database, and the Namecheap domain) are signed in with the club's shared team account, never anyone's personal email. At least two exec members hold its password and backup codes.
-- **Secrets** live only in Vercel's environment variables, never in a repo.
-- **Recurring cost:** only the `foundersillinois.org` domain renewal.
+For exec members and owners.
 
 **Common tasks:**
 
@@ -59,6 +54,7 @@ Account logins, who holds them, renewal dates and contacts are in the private **
 | Add a contributor | Org → **People** → **Invite member** (role: Member) |
 | Let someone approve pull requests for one repo | Org → **Teams** → `<repo>-maintainers` → **Add a member** |
 | Add an exec member | Org → **Teams** → `exec` → **Add a member** (and make them an owner if they'll run the org) |
+| Put someone in their club subteam | Org → **Teams** → `events`, `exploration`, `community` or `r&d` → **Add a member** |
 | Remove someone | Org → **People** → their name → **Remove from organization** |
 | Make an exec member an owner | Org → **People** → their name → **Change role** → Owner |
 | Change how many approvals a repo needs | Repo → **Settings** → **Rules** → **Rulesets** → `Protect main` → **Required approvals** |
@@ -71,9 +67,3 @@ Account logins, who holds them, renewal dates and contacts are in the private **
 5. Host it in the club's Vercel account (apps with a server or database) or on GitHub Pages (static sites). Never a personal account.
 6. Add a CNAME record for the subdomain in Namecheap DNS.
 7. Add a row to the table at the top of this page (`profile/README.md` in the [`.github`](https://github.com/Founders-Illinois-Entrepreneurs/.github) repo).
-
-**When the exec team changes:** follow the **Each semester** checklist in the Tech handover doc. In short:
-- Hand over ownership, the team account password and backup codes.
-- Update the `exec` team and each repo's maintainers team.
-- Change the events organizer password.
-- Check the domain renewal.
